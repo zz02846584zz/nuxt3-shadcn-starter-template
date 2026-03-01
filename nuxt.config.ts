@@ -2,8 +2,9 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-11',
+  compatibilityDate: '2026-03-01',
   devtools: { enabled: true },
+  css: ['~/assets/css/tailwind.css'],
   vite: {
     plugins: [
       tailwindcss(),
@@ -15,7 +16,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'shadcn-nuxt'
   ],
-  css: ['~/assets/css/tailwind.css'],
   shadcn: {
     /**
      * Prefix for all the imported component
